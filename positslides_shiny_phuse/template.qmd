@@ -1,0 +1,155 @@
+---
+title: "Shiny for Submissions"
+subtitle: "Eric Nantz & Phil Bowsher March 8, 2023 RinPharma.com"
+title-slide-attributes: 
+  data-background-color: white
+  data-background-image: _extensions/positslides/assets/backgrounds/sample-title-slide-option-1.png
+  data-background-size: contain
+format:
+  positslides-revealjs: 
+    width: "1600"
+    height: "900"
+    filters:
+      - positslides
+---
+
+## Intro {.toc-dark}
+
+- 2005-2010: Full Stack Engineer
+- [Joe Cheng | The Past and Future of Shiny | RStudio (2022)](https://www.youtube.com/watch?v=HpqLXB_TnpI&ab_channel=PositPBC)
+- 2011: Researches & Scientist wanted to share "interactive" statistical concepts with people
+- Shiny brought CSS, HTML, JS (Plotly) to Scientist via R
+- 2015: https://pubmed.ncbi.nlm.nih.gov/25733352/ mixADA!
+- 2018 [R in Pharma](https://rinpharma.com/event/rinpharma2018/) & [Shinymeta](https://towardsdatascience.com/shinymeta-a-revolution-for-reproducibility-bfda6b329f68)
+- [2020 GSK](https://www.rstudio.com/blog/driving-agility-in-clinical-reporting-q-a/) & [Future of clinical tfls](https://williamnoble.shinyapps.io/the_future_of_clinical_tfls/)
+
+"We haven’t yet attempted to include a Shiny app in a submission, but this is a very interesting area that GSK and several other companies have been looking at."
+
+## In this talk {.toc-dark}
+
+- Challenge - Modernize the clinical trials process with interactive capablities
+- Solution - Shiny, a popular open source package used by the FDA, Pharmas, Universities & Students
+- Impact, Best Practices & Next Steps
+
+## Challenge -  {.toc-light}
+
+- "Janet Woodcock, director of CDER stated that “Reliance On ‘Digitized Paper’ Is Slowing Drug Development” and pharmas are interested in bringing interactive visualization tools as part of the submission process."
+
+- [Best Practice for Interactive Analysis for Submission](https://www.lexjansen.com/css-us/2020/POS_PP16.pdf)
+
+
+## Change How Reviewers Interface with Data  {.toc-light}
+
+- Change the way a reviewer navigates
+- Dive deeper into datapoints via hyperlinking or mouse overs
+- Digest and navigate, with intention, the submission data faster
+- Minimize time from question to answer
+- Provide control to the decision maker rather than the programmer
+- Support Safety Reviews, such as drilling into patient profiles and AEs
+- Insert Lilly use-case
+
+## Shiny  {.toc-light}
+
+- [Six Years of Shiny in Research](https://journal.r-project.org/archive/2021/RJ-2021-009/RJ-2021-009.pdf)
+- [Evaluation of covariate effects using forest plots and introduction to the coveffectsplot R package](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9574733/)
+- "The coveffectsplot package enables the user to control every aspect of the presented intervals using R code or using a point and click interface via the included R Shiny app launched with the “run_interactiveforestplot()” command"
+- “The R Shiny application allows the user to easily control the inclusion or exclusion of parameters or covariates, to control the order of presentation of parameters, covariates, and covariate value labels using “drag and drop” interactions. “
+
+
+## Pharmas & FDA Use R {.30-70-dark}
+
+- [Using R in a Regulatory Environment:
+some FDA perspectives](https://www.fcsm.gov/assets/files/docs/gasp/Schuette.pdf)
+- [Immunogenicity of mRNA-1273 SARS-CoV-2 Vaccine, sample size is calculated using R package gsDesign (Anderson 2020)](https://covid19crc.org/wp-content/uploads/2020/09/mRNA-1273-P301-Protocol-2020.pdf)
+- [203093Orig1s000 NDA 2012 Gilead Rstudio/R were used for data analysis](https://www.accessdata.fda.gov/drugsatfda_docs/nda/2014/203093Orig1s000ClinPharmR.pdf)
+- [761194Orig1s000 NDA Genzyme Corporation 2021 R & Python](https://www.accessdata.fda.gov/drugsatfda_docs/nda/2021/761194Orig1s000IntegratedR.pdf)
+- [Submissions List](https://github.com/philbowsher/Open-Source-in-New-Drug-Applications-NDAs-FDA/blob/main/README.md)
+
+
+
+## Pharmas Use Shiny {.toc-dark}
+
+- [PK/PD Analysis](https://www.page-meeting.org/page/page2018/PAGE2018Abstracts.pdf) & [PSI Webinars](https://uat.psiweb.org/events/past-psi-events/2022/10/25/default-calendar/psi-webinar-series-showcasing-r-use-in-pharma)
+- Use of Shiny applications within studies in order to minimize work [Biogen-Inc/tidyCDISC](https://github.com/Biogen-Inc/tidyCDISC) & [OSPred AstraZeneca](https://ascopubs.org/doi/full/10.1200/CCI.21.00173)
+- [Open-source Technologies in Regulatory Submissions](https://phuse.s3.eu-central-1.amazonaws.com/Deliverables/Data+Visualisation+%26+Open+Source+Technology/WP057.pdf)
+- “Replacing a static submission with a dynamic one that allows for custom and flexible reports and visualisations would be a major improvement for reviewers, not only for verifying the safety and efficacy of a product, but also for expanding on the analysis already done by the sponsor”
+- "libraries provide support for dynamic displays that react to
+user input. This functionality can collapse the need for dozens
+of displays into one, allowing the user to interrogate data as they
+need to"
+
+
+## Roche Teal Shiny Framework {.30-70-dark}
+
+- ["teal package is a framework developed at Roche that leverages the R Shiny package to scale development of our shiny apps"](https://www.lexjansen.com/phuse-us/2022/os/PRE_OS07.pdf)
+- “Challenge study results delivery: from paper to interactive” [Webinar](https://youtu.be/nqJsLSLd39A?t=486)
+- "Gaining efficiency in the study results delivery internally & externally"
+- "Challenging the way analyses are delivered"
+- [Efficacy](https://genentech.shinyapps.io/teal_efficacy/)
+- [Exploratory](https://genentech.shinyapps.io/teal_exploratory/)
+- [Safety](https://genentech.shinyapps.io/teal_safety/)
+
+## FDA Uses Shiny {.30-70-light}
+
+- [sendigR - Cross-Study Analysis of SEND Datasets](https://www.fda.gov/media/148381/download)
+- [FDA MCDA Shiny App analysis can help inform decision making](https://ww2.amstat.org/meetings/biop/2020/onlineprogram/ViewPresentation.cfm?file=301270.pptx)
+- [R Shiny Based Mobile Tools To Aid Regulatory Decisions And Program Evaluation](https://www.fda.gov/media/130495/download)
+- ["The application provides a visual output to easily access and comprehend the data"](https://www.fda.gov/science-research/fda-stem-outreach-education-and-engagement/developing-quantitative-interface-evaluating-effect-dosage-modification-safety-and-efficacy)
+
+["A ShinyR-based application was developed to facilitate the usability of received PK data for reviewers. This application can save 4-8 hours per study for reviewers for managing PK data. Its user-friendly web interface enables the application as an easy-to-use tool for most reviewers"](https://www.fda.gov/media/129006/download)
+
+## {.dark-section}
+
+Universites & Students use Shiny
+
+- [R is widely used in academe, and is the first choice for
+many recent graduates.](https://www.fcsm.gov/assets/files/docs/gasp/Schuette.pdf)
+- [FDA Annual Student Scientific Research Day 2021](https://www.fda.gov/science-research/fda-stem-outreach-education-and-engagement/fda-annual-student-scientific-research-day-2021)
+
+Generating an in-house automatic tool to apply the guidelines of Response evaluation criteria in solid tumors (RECIST 1.1). A Shiny application will be used to convert the tool to an interactive interface.
+
+
+
+## {.dark-section-2}
+
+Shiny for Submissions [Task Force](https://learn.rinpharma.com/images/focus.png)
+
+- Data Exploration
+- Dynamic Data Displays
+- Pharma Collaborations
+- Publishing
+
+[The](https://www.lexjansen.com/phuse-us/2022/os/PRE_OS07.pdf) industry effort in building, collaborating & design new R-packages, brings new capabilities & possibly triggering further downstream changes
+
+
+## Future Considerations {.30-70-light}
+
+- [precisionFDA is adding capabilities to enable data scientists to easilyuse Shiny R apps](https://www.fda.gov/media/142261/download)
+- [FDA Office of Innovation Shiny Infrastructure](https://www.fda.gov/media/142026/download)
+- [Shiny for Python](https://shiny.rstudio.com/py/) & [Submission of Software Programs to Regulatory Agencies](https://www.lexjansen.com/phuse-us/2019/sa/SA04.pdf)
+- [Analysis Results as Data](https://www.nature.com/articles/s41597-022-01789-2) & [ARDs](https://www.pharmasug.org/download/sde/rtp2021/PharmaSUG-NCSDE_2021-08.pdf) & [Shinymeta](https://github.com/rstudio/shinymeta)
+
+"...converge on how to move forward in establishing analysis results as a data source to support future reusability and knowledge discovery"
+
+
+## {.dark-section-3}
+Eric slides
+
+## {.dark-section-2}
+
+Eric slides
+
+
+
+## Appendix - Other Pharma Shiny {.30-70-light}
+
+- [“Results from the dose optimization were transferred into a DDS web application implemented with the R package “shiny,” allowing users to easily filter simulation analysis tailored to DDGIs and simvastatin doses of interest.”](https://ascpt.onlinelibrary.wiley.com/doi/10.1002/cpt.2111)
+- [“Such quick access by cross-functional teams can be especially beneficial for efficacy data in single-arm clinical trials, for which interactive dashboards can easily be built using the Shiny package in R. These dashboards, also known as Shiny web apps, can be tailored to the specific needs of the study team.”](https://www.pharmasug.org/proceedings/2022/DV/PharmaSUG-2022-DV-082.pdf)
+- [“An R Shiny App to design and analyse basket trials in Oncology”](https://www.bayes-pharma.org/wp-content/uploads/2019/06/Session-7-6-Anna-Pohlmann-REVISED.pdf)
+
+## Appendix - Other FDA Shiny {.30-70-light}
+
+- [Sample size determination](https://www.fda.gov/media/151908/download)
+- [RNA-seq Differential Expression (DE) Toolkit](https://www.fda.gov/media/142036/download)
+- [Interrogating Whole-Genome Sequence and CAERS Data](https://www.fda.gov/media/155792/download)
+- [Pharmacokinetic Modeling of Sertraline Dosing in Pregnancy](https://www.fda.gov/drugs/regulatory-science-research-and-education/physiologically-based-pharmacokinetic-modeling-sertraline-dosing-pregnancy)
