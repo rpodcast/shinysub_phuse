@@ -8,7 +8,7 @@
 <link href="template_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="template_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="template_files/libs/quarto-contrib/posit_slides/posit-slides.js"></script><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.2.269">
+  <meta name="generator" content="quarto-1.2.313">
 
   <title>Shiny for Submissions</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -325,7 +325,7 @@
 
 <section id="title-slide" data-background-color="white" data-background-image="_extensions/positslides/assets/backgrounds/sample-title-slide-option-1.png" data-background-size="contain" class="quarto-title-block center">
   <h1 class="title">Shiny for Submissions</h1>
-  <p class="subtitle">Eric Nantz &amp; Phil Bowsher March 8, 2023 RinPharma.com</p>
+  <p class="subtitle">Phil Bowsher &amp; Eric Nantz March 8, 2023 RinPharma.com</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -355,7 +355,7 @@
 <div class="column" style="width:100%;">
 <h2>In this talk</h2>
 <ul>
-<li>Challenge - Modernize the clinical trials process with interactive capablities</li>
+<li>Challenge - Modernize the clinical trials process with interactive capabilities</li>
 <li>Solution - Shiny, a popular open source package used by the FDA, Pharmas, Universities &amp; Students</li>
 <li>Impact, Best Practices &amp; Next Steps</li>
 </ul>
@@ -381,12 +381,12 @@
 <h2>Change How Reviewers Interface with Data</h2>
 <ul>
 <li>Change the way a reviewer navigates</li>
-<li>Dive deeper into datapoints via hyperlinking or mouse overs</li>
+<li>Dive deeper into data points via hyperlinking or mouse overs</li>
 <li>Digest and navigate, with intention, the submission data faster</li>
 <li>Minimize time from question to answer</li>
 <li>Provide control to the decision maker rather than the programmer</li>
 <li>Support Safety Reviews, such as drilling into patient profiles and AEs</li>
-<li>Insert Lilly use-case</li>
+<li>Intuitive interface to perform and analyze simulations of clinical designs</li>
 </ul>
 </div>
 </div>
@@ -431,7 +431,7 @@
 <li><a href="https://www.page-meeting.org/page/page2018/PAGE2018Abstracts.pdf">PK/PD Analysis</a> &amp; <a href="https://uat.psiweb.org/events/past-psi-events/2022/10/25/default-calendar/psi-webinar-series-showcasing-r-use-in-pharma">PSI Webinars</a></li>
 <li>Use of Shiny applications within studies in order to minimize work <a href="https://github.com/Biogen-Inc/tidyCDISC">Biogen-Inc/tidyCDISC</a> &amp; <a href="https://ascopubs.org/doi/full/10.1200/CCI.21.00173">OSPred AstraZeneca</a></li>
 <li><a href="https://phuse.s3.eu-central-1.amazonaws.com/Deliverables/Data+Visualisation+%26+Open+Source+Technology/WP057.pdf">Open-source Technologies in Regulatory Submissions</a></li>
-<li>“Replacing a static submission with a dynamic one that allows for custom and flexible reports and visualisations would be a major improvement for reviewers, not only for verifying the safety and efficacy of a product, but also for expanding on the analysis already done by the sponsor”</li>
+<li>“Replacing a static submission with a dynamic one that allows for custom and flexible reports and visualizations would be a major improvement for reviewers, not only for verifying the safety and efficacy of a product, but also for expanding on the analysis already done by the sponsor”</li>
 <li>“libraries provide support for dynamic displays that react to user input. This functionality can collapse the need for dozens of displays into one, allowing the user to interrogate data as they need to”</li>
 </ul>
 </div>
@@ -444,6 +444,7 @@
 &nbsp;
 </div><div class="column" style="width:65%;">
 <h2>Roche Teal Shiny Framework</h2>
+<p><img data-src="images/teal_demo.gif" class="absolute" style="top: 0px; left: -90px; "></p>
 <ul>
 <li><a href="https://www.lexjansen.com/phuse-us/2022/os/PRE_OS07.pdf">“teal package is a framework developed at Roche that leverages the R Shiny package to scale development of our shiny apps”</a></li>
 <li>“Challenge study results delivery: from paper to interactive” <a href="https://youtu.be/nqJsLSLd39A?t=486">Webinar</a></li>
@@ -463,6 +464,7 @@
 &nbsp;
 </div><div class="column" style="width:65%;">
 <h2>FDA Uses Shiny</h2>
+<p><img data-src="images/fda_sampling_app.gif" class="absolute" style="top: 200px; left: -90px; "></p>
 <ul>
 <li><a href="https://www.fda.gov/media/148381/download">sendigR - Cross-Study Analysis of SEND Datasets</a></li>
 <li><a href="https://ww2.amstat.org/meetings/biop/2020/onlineprogram/ViewPresentation.cfm?file=301270.pptx">FDA MCDA Shiny App analysis can help inform decision making</a></li>
@@ -480,7 +482,7 @@
 &nbsp;
 </div><div class="column" style="width:65%;">
 <h2></h2>
-<p>Universites &amp; Students use Shiny</p>
+<p>Universities &amp; Students use Shiny</p>
 <ul>
 <li><a href="https://www.fcsm.gov/assets/files/docs/gasp/Schuette.pdf">R is widely used in academe, and is the first choice for many recent graduates.</a></li>
 <li><a href="https://www.fda.gov/science-research/fda-stem-outreach-education-and-engagement/fda-annual-student-scientific-research-day-2021">FDA Annual Student Scientific Research Day 2021</a></li>
@@ -488,6 +490,112 @@
 <p>Generating an in-house automatic tool to apply the guidelines of Response evaluation criteria in solid tumors (RECIST 1.1). A Shiny application will be used to convert the tool to an interactive interface.</p>
 </div>
 </div>
+</section>
+<section class="slide level2" data-background-image="_extensions/positslides/assets/backgrounds/toc-light.png" data-background-size="contain">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:100%;">
+<h2>A New Frontier</h2>
+<p><img data-src="images/donald_duck.png" class="absolute" style="top: 500px; left: 300px; "> <img data-src="images/clutter.jpg" class="absolute" style="top: 400px; left: 800px; "></p>
+<p>Shiny is transforming clinical workflows within life science organizations</p>
+<ul>
+<li>Accelerating internal decisions</li>
+<li>Efficient review of clinical data</li>
+<li>Intuitive interfaces to complex statistical methods and pipelines</li>
+</ul>
+<p><br> <br> <br> <br> <br> <br> <br></p>
+<p><strong>How can Shiny bring similar benefits to a clinical submission package?</strong></p>
+</div>
+</div>
+</section>
+<section class="slide level2" data-background-image="_extensions/positslides/assets/backgrounds/30-70-light.png" data-background-size="contain">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+&nbsp;
+</div><div class="column" style="width:65%;">
+<h2>R Submissions Working Group</h2>
+<p><img data-src="images/pilot1_kmplot.png" class="absolute" style="top: 70px; left: -80px; width: 35%; "></p>
+<ul>
+<li>Cross-industry working group with members from life sciences organizations and regulatory agencies</li>
+<li>Evaluate clinical submission packages leveraging R for analysis programs and results</li>
+<li>Identify potential gaps and solutions using targeted pilots that mimic a clinical submission process</li>
+<li>Open-source: All materials available on GitHub!</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="slide level2">
+<h2>Foundation - Pilot 1 Submission</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img data-src="images/tron1.png" width="400"></p>
+</div><div class="column" style="width:70%;">
+<ul>
+<li>November 2021 - <a href="https://www.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fda">Successful R-based Test Package Submitted to FDA</a></li>
+<li>Adhered to <a href="https://www.fda.gov/drugs/electronic-regulatory-submission-and-review/electronic-common-technical-document-ectd">Electronic Common Technical Document (eCTD)</a> specifications
+<ul>
+<li><a href="https://github.com/RConsortium/submissions-pilot1-to-fda/blob/main/m5/datasets/rconsortiumpilot1/analysis/adam/datasets/adrg.pdf">Analysis Data Reviewer Guide</a></li>
+<li>R Package converted to <a href="https://github.com/RConsortium/submissions-pilot1-to-fda/blob/main/m5/datasets/rconsortiumpilot1/analysis/adam/programs/r0pkg.txt">text file</a> using <a href="https://merck.github.io/pkglite/"><code>{pkglite}</code></a></li>
+<li>ADaM datasets</li>
+<li>TLF output</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section class="slide level2" data-background-image="images/pilot2_demo.gif" data-background-size="contain">
+<h2></h2>
+<div class="footer">
+<p><a href="https://rconsortium.shinyapps.io/submissions-pilot2/">rconsortium.shinyapps.io/submissions-pilot2</a></p>
+</div>
+</section>
+<section class="slide level2" data-background-image="_extensions/positslides/assets/backgrounds/30-70-light.png" data-background-size="contain">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+&nbsp;
+</div><div class="column" style="width:65%;">
+<h2>Technical Overview</h2>
+<p><img data-src="images/pilot2_packages.png" class="absolute" style="top: 170px; left: -80px; width: 35%; "></p>
+<ul>
+<li>Application components created with <a href="https://shiny.rstudio.com/articles/modules.html">Shiny Modules</a></li>
+<li>Assembled as an R package using <a href="https://thinkr-open.github.io/golem/"><code>{golem}</code></a></li>
+<li>Package dependencies managed by <a href="https://rstudio.github.io/renv/index.html"><code>{renv}</code></a> ensuring reviewers can replicate R environment used to build application</li>
+<li>Version control and collaborative development with Git and GitHub</li>
+<li>ADRG specifying precise instructions to execute application on a local machine with R available</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="slide level2" data-background-image="_extensions/positslides/assets/backgrounds/toc-light.png" data-background-size="contain">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:100%;">
+<h2>Collaborative Review</h2>
+<ul>
+<li>Regular cadence to elicit feedback from FDA reviewers throughout development</li>
+<li>Development version deployed on external hosting to streamline review</li>
+<li>Delicate balance of interactive filters:
+<ul>
+<li>Dynamically update p-values based on filtered observation</li>
+<li>Potential for confusion and misinterpretation</li>
+<li>Compromise: Allow filtering within visualization module</li>
+</ul></li>
+</ul>
+<p><br> <br></p>
+<p><strong>November 2022: <a href="https://www.r-consortium.org/blog/2022/12/07/update-successful-r-based-package-submission-with-shiny-component-to-fda">Pilot 2 Submitted to FDA</a>!</strong></p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+<h2>The Next Wave of Innovation</h2>
+<p><br> Upcoming Pilots for R Submissions Working Group</p>
+<ul>
+<li>Using R programming to create ADaM data sets</li>
+<li>Leveraging state-of-the-art container technology for Shiny application distribution</li>
+<li>To learn more and get involved visit <a href="https://rconsortium.github.io/submissions-wg/">rconsortium.github.io/submissions-wg</a></li>
+</ul>
 </section>
 <section class="slide level2" data-background-image="_extensions/positslides/assets/backgrounds/dark-section-2.png" data-background-size="contain">
 <h2></h2>
@@ -503,7 +611,7 @@
 <li>Pharma Collaborations</li>
 <li>Publishing</li>
 </ul>
-<p><a href="https://www.lexjansen.com/phuse-us/2022/os/PRE_OS07.pdf">The</a> industry effort in building, collaborating &amp; design new R-packages, brings new capabilities &amp; possibly triggering further downstream changes</p>
+<p><a href="https://www.lexjansen.com/phuse-us/2022/os/PRE_OS07.pdf">The</a> industry effort in building, collaborating &amp; design new R-packages, brings new capabilities &amp; enhancing current workflows</p>
 </div>
 </div>
 </section>
@@ -521,29 +629,6 @@
 <li><a href="https://www.nature.com/articles/s41597-022-01789-2">Analysis Results as Data</a> &amp; <a href="https://www.pharmasug.org/download/sde/rtp2021/PharmaSUG-NCSDE_2021-08.pdf">ARDs</a> &amp; <a href="https://github.com/rstudio/shinymeta">Shinymeta</a></li>
 </ul>
 <p>“…converge on how to move forward in establishing analysis results as a data source to support future reusability and knowledge discovery”</p>
-</div>
-</div>
-</section>
-<section class="slide level2" data-background-image="_extensions/positslides/assets/backgrounds/dark-section-3.png" data-background-size="contain">
-<h2></h2>
-<div class="columns has-dark-background">
-<div class="column" style="width:45%;">
-<br>
-<h2></h2>
-<p>Eric slides</p>
-</div><div class="column" style="width:55%;">
-&nbsp;
-</div>
-</div>
-</section>
-<section class="slide level2" data-background-image="_extensions/positslides/assets/backgrounds/dark-section-2.png" data-background-size="contain">
-<h2></h2>
-<div class="columns has-dark-background">
-<div class="column" style="width:55%;">
-&nbsp;
-</div><div class="column" style="width:45%;">
-<h2></h2>
-<p>Eric slides</p>
 </div>
 </div>
 </section>

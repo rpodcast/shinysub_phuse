@@ -1,6 +1,6 @@
 ---
 title: "Shiny for Submissions"
-subtitle: "Eric Nantz & Phil Bowsher March 8, 2023 RinPharma.com"
+subtitle: "Phil Bowsher & Eric Nantz March 8, 2023 RinPharma.com"
 title-slide-attributes: 
   data-background-color: white
   data-background-image: _extensions/positslides/assets/backgrounds/sample-title-slide-option-1.png
@@ -27,7 +27,7 @@ format:
 
 ## In this talk {.toc-dark}
 
-- Challenge - Modernize the clinical trials process with interactive capablities
+- Challenge - Modernize the clinical trials process with interactive capabilities
 - Solution - Shiny, a popular open source package used by the FDA, Pharmas, Universities & Students
 - Impact, Best Practices & Next Steps
 
@@ -41,12 +41,12 @@ format:
 ## Change How Reviewers Interface with Data  {.toc-light}
 
 - Change the way a reviewer navigates
-- Dive deeper into datapoints via hyperlinking or mouse overs
+- Dive deeper into data points via hyperlinking or mouse overs
 - Digest and navigate, with intention, the submission data faster
 - Minimize time from question to answer
 - Provide control to the decision maker rather than the programmer
 - Support Safety Reviews, such as drilling into patient profiles and AEs
-- Insert Lilly use-case
+- Intuitive interface to perform and analyze simulations of clinical designs
 
 ## Shiny  {.toc-light}
 
@@ -72,7 +72,7 @@ some FDA perspectives](https://www.fcsm.gov/assets/files/docs/gasp/Schuette.pdf)
 - [PK/PD Analysis](https://www.page-meeting.org/page/page2018/PAGE2018Abstracts.pdf) & [PSI Webinars](https://uat.psiweb.org/events/past-psi-events/2022/10/25/default-calendar/psi-webinar-series-showcasing-r-use-in-pharma)
 - Use of Shiny applications within studies in order to minimize work [Biogen-Inc/tidyCDISC](https://github.com/Biogen-Inc/tidyCDISC) & [OSPred AstraZeneca](https://ascopubs.org/doi/full/10.1200/CCI.21.00173)
 - [Open-source Technologies in Regulatory Submissions](https://phuse.s3.eu-central-1.amazonaws.com/Deliverables/Data+Visualisation+%26+Open+Source+Technology/WP057.pdf)
-- “Replacing a static submission with a dynamic one that allows for custom and flexible reports and visualisations would be a major improvement for reviewers, not only for verifying the safety and efficacy of a product, but also for expanding on the analysis already done by the sponsor”
+- “Replacing a static submission with a dynamic one that allows for custom and flexible reports and visualizations would be a major improvement for reviewers, not only for verifying the safety and efficacy of a product, but also for expanding on the analysis already done by the sponsor”
 - "libraries provide support for dynamic displays that react to
 user input. This functionality can collapse the need for dozens
 of displays into one, allowing the user to interrogate data as they
@@ -80,6 +80,8 @@ need to"
 
 
 ## Roche Teal Shiny Framework {.30-70-dark}
+
+![](images/teal_demo.gif){.absolute top=0 left=-90}
 
 - ["teal package is a framework developed at Roche that leverages the R Shiny package to scale development of our shiny apps"](https://www.lexjansen.com/phuse-us/2022/os/PRE_OS07.pdf)
 - “Challenge study results delivery: from paper to interactive” [Webinar](https://youtu.be/nqJsLSLd39A?t=486)
@@ -91,6 +93,8 @@ need to"
 
 ## FDA Uses Shiny {.30-70-light}
 
+![](images/fda_sampling_app.gif){.absolute top=200 left=-90}
+
 - [sendigR - Cross-Study Analysis of SEND Datasets](https://www.fda.gov/media/148381/download)
 - [FDA MCDA Shiny App analysis can help inform decision making](https://ww2.amstat.org/meetings/biop/2020/onlineprogram/ViewPresentation.cfm?file=301270.pptx)
 - [R Shiny Based Mobile Tools To Aid Regulatory Decisions And Program Evaluation](https://www.fda.gov/media/130495/download)
@@ -100,7 +104,7 @@ need to"
 
 ## {.dark-section}
 
-Universites & Students use Shiny
+Universities & Students use Shiny
 
 - [R is widely used in academe, and is the first choice for
 many recent graduates.](https://www.fcsm.gov/assets/files/docs/gasp/Schuette.pdf)
@@ -108,7 +112,94 @@ many recent graduates.](https://www.fcsm.gov/assets/files/docs/gasp/Schuette.pdf
 
 Generating an in-house automatic tool to apply the guidelines of Response evaluation criteria in solid tumors (RECIST 1.1). A Shiny application will be used to convert the tool to an interactive interface.
 
+## A New Frontier {.toc-light}
 
+![](images/donald_duck.png){.absolute top=500 left=300}
+![](images/clutter.jpg){.absolute top=400 left=800}
+
+Shiny is transforming clinical workflows within life science organizations
+
++ Accelerating internal decisions
+* Efficient review of clinical data
+* Intuitive interfaces to complex statistical methods and pipelines
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+**How can Shiny bring similar benefits to a clinical submission package?**
+
+## R Submissions Working Group {.30-70-light}
+
+![](images/pilot1_kmplot.png){.absolute top=70 left=-80 width="35%"}
+
+* Cross-industry working group with members from life sciences organizations and regulatory agencies
+* Evaluate clinical submission packages leveraging R for analysis programs and results
+* Identify potential gaps and solutions using targeted pilots that mimic a clinical submission process
+* Open-source: All materials available on GitHub!
+
+## Foundation - Pilot 1 Submission
+
+:::: {.columns}
+
+::: {.column width="30%"}
+![](images/tron1.png){width="400"}
+:::
+
+::: {.column width="70%"}
+
+* November 2021 - [Successful R-based Test Package Submitted to FDA](https://www.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fda)
+* Adhered to [Electronic Common Technical Document (eCTD)](https://www.fda.gov/drugs/electronic-regulatory-submission-and-review/electronic-common-technical-document-ectd) specifications
+     + [Analysis Data Reviewer Guide](https://github.com/RConsortium/submissions-pilot1-to-fda/blob/main/m5/datasets/rconsortiumpilot1/analysis/adam/datasets/adrg.pdf)
+     + R Package converted to [text file](https://github.com/RConsortium/submissions-pilot1-to-fda/blob/main/m5/datasets/rconsortiumpilot1/analysis/adam/programs/r0pkg.txt) using [`{pkglite}`](https://merck.github.io/pkglite/)
+     + ADaM datasets
+     + TLF output
+
+:::
+
+::::
+
+## {background-image="images/pilot2_demo.gif" background-size="contain"}
+
+::: footer
+[rconsortium.shinyapps.io/submissions-pilot2](https://rconsortium.shinyapps.io/submissions-pilot2/)
+:::
+
+## Technical Overview {.30-70-light}
+
+![](images/pilot2_packages.png){.absolute top=170 left=-80 width="35%"}
+
+* Application components created with [Shiny Modules](https://shiny.rstudio.com/articles/modules.html)
+* Assembled as an R package using [`{golem}`](https://thinkr-open.github.io/golem/)
+* Package dependencies managed by [`{renv}`](https://rstudio.github.io/renv/index.html) ensuring reviewers can replicate R environment used to build application
+* Version control and collaborative development with Git and GitHub
+* ADRG specifying precise instructions to execute application on a local machine with R available
+
+## Collaborative Review {.toc-light}
+
+* Regular cadence to elicit feedback from FDA reviewers throughout development
+* Development version deployed on external hosting to streamline review
+* Delicate balance of interactive filters:
+     + Dynamically update p-values based on filtered observation
+     + Potential for confusion and misinterpretation 
+     + Compromise: Allow filtering within visualization module
+     
+<br>
+<br>
+
+**November 2022: [Pilot 2 Submitted to FDA](https://www.r-consortium.org/blog/2022/12/07/update-successful-r-based-package-submission-with-shiny-component-to-fda)!**
+
+## The Next Wave of Innovation
+<br>
+Upcoming Pilots for R Submissions Working Group
+
+* Using R programming to create ADaM data sets
+* Leveraging state-of-the-art container technology for Shiny application distribution
+* To learn more and get involved visit [rconsortium.github.io/submissions-wg](https://rconsortium.github.io/submissions-wg/)
 
 ## {.dark-section-2}
 
@@ -119,7 +210,7 @@ Shiny for Submissions [Task Force](https://learn.rinpharma.com/images/focus.png)
 - Pharma Collaborations
 - Publishing
 
-[The](https://www.lexjansen.com/phuse-us/2022/os/PRE_OS07.pdf) industry effort in building, collaborating & design new R-packages, brings new capabilities & possibly triggering further downstream changes
+[The](https://www.lexjansen.com/phuse-us/2022/os/PRE_OS07.pdf) industry effort in building, collaborating & design new R-packages, brings new capabilities & enhancing current workflows
 
 
 ## Future Considerations {.30-70-light}
@@ -130,16 +221,6 @@ Shiny for Submissions [Task Force](https://learn.rinpharma.com/images/focus.png)
 - [Analysis Results as Data](https://www.nature.com/articles/s41597-022-01789-2) & [ARDs](https://www.pharmasug.org/download/sde/rtp2021/PharmaSUG-NCSDE_2021-08.pdf) & [Shinymeta](https://github.com/rstudio/shinymeta)
 
 "...converge on how to move forward in establishing analysis results as a data source to support future reusability and knowledge discovery"
-
-
-## {.dark-section-3}
-Eric slides
-
-## {.dark-section-2}
-
-Eric slides
-
-
 
 ## Appendix - Other Pharma Shiny {.30-70-light}
 
